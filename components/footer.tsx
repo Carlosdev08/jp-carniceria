@@ -3,47 +3,43 @@ import { Facebook, Instagram, MapPin, Phone } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="w-full border-t bg-background">
-      <div className="container py-12 md:py-16 grid gap-8 md:grid-cols-3">
-        <div>
-          <h3 className="text-lg font-semibold mb-4">La Marina</h3>
-          <p className="text-sm text-muted-foreground">
-            Carnicería y pescadería de calidad, ofreciendo los mejores productos frescos desde 1980.
+    <footer className="border-t bg-background">
+      <div className="container grid gap-8 py-9 sm:grid-cols-2 sm:py-12 md:grid-cols-3 md:py-14">
+        <div className="sm:col-span-2 md:col-span-1">
+          <Link href="/" className="inline-flex text-2xl font-black tracking-[-0.09em]" aria-label="J&P, inicio">J<span className="text-primary/65">&</span>P</Link>
+          <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
+            Carnicería y pescadería. Seleccionamos productos frescos para llevar calidad a tu mesa.
           </p>
         </div>
-        
+
         <div>
-          <h3 className="text-lg font-semibold mb-4">Contacto</h3>
-          <div className="space-y-2">
-            <Link href="https://maps.google.com" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary">
-              <MapPin className="h-4 w-4" />
-              Calle Principal 123, Madrid
+          <h3 className="mb-3 text-sm font-semibold">Contacto</h3>
+          <div className="space-y-3">
+            <Link href="https://maps.google.com" className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground">
+              <MapPin className="h-4 w-4 shrink-0" /> Madrid
             </Link>
-            <Link href="tel:+34900000000" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary">
-              <Phone className="h-4 w-4" />
-              900 000 000
+            <Link href="tel:+34900000000" className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground">
+              <Phone className="h-4 w-4 shrink-0" /> 900 000 000
             </Link>
           </div>
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold mb-4">Síguenos</h3>
-          <div className="flex gap-4">
-            <Link href="https://facebook.com" className="text-muted-foreground hover:text-primary">
+          <h3 className="mb-3 text-sm font-semibold">Síguenos</h3>
+          <div className="flex gap-3">
+            <Link href="https://facebook.com" aria-label="Facebook" className="flex h-10 w-10 items-center justify-center rounded-full bg-muted text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground">
               <Facebook className="h-5 w-5" />
             </Link>
-            <Link href="https://instagram.com" className="text-muted-foreground hover:text-primary">
+            <Link href="https://instagram.com" aria-label="Instagram" className="flex h-10 w-10 items-center justify-center rounded-full bg-muted text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground">
               <Instagram className="h-5 w-5" />
             </Link>
           </div>
         </div>
       </div>
-      
+
       <div className="border-t">
-        <div className="container py-6">
-          <p className="text-sm text-center text-muted-foreground">
-            © {new Date().getFullYear()} La Marina. Todos los derechos reservados.
-          </p>
+        <div className="container py-5">
+          <p className="text-center text-xs text-muted-foreground">© {new Date().getFullYear()} J&P. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

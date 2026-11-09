@@ -45,7 +45,7 @@ const offers = [
 
 const benefits = [
   { icon: Award, title: "Calidad premium", description: "Seleccionamos los mejores productos" },
-  { icon: Truck, title: "Entrega a domicilio", description: "Recibe tu pedido cómodamente" },
+  { icon: Truck, title: "Entrega a domicilio", description: "Haz tu pedido y recógelo en tienda" },
   { icon: Clock3, title: "Siempre fresco", description: "Productos frescos cada día" },
 ]
 
@@ -74,7 +74,7 @@ export default function Home() {
               Los mejores cortes de carne y el pescado más fresco, directos a tu mesa.
             </p>
             <div className="mt-7 grid grid-cols-1 gap-3 sm:flex sm:flex-wrap">
-              <Button asChild size="lg" className="h-13 w-full rounded-xl bg-white px-7 text-base font-semibold text-neutral-950 shadow-lg hover:bg-white/90 sm:w-auto">
+              <Button asChild size="lg" className="h-12 w-full rounded-xl bg-white px-7 text-base font-semibold text-neutral-950 shadow-lg hover:bg-white/90 sm:w-auto">
                 <Link href="#productos">Ver productos <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="h-13 w-full rounded-xl border-white/70 bg-black/20 px-7 text-base font-semibold text-white backdrop-blur-sm hover:bg-white/15 hover:text-white sm:w-auto">
@@ -173,7 +173,7 @@ export default function Home() {
             <div>
               <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Estamos para ayudarte</p>
               <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">¿Preparamos tu pedido?</h2>
-              <p className="mt-2 text-sm text-white/70 sm:text-base">Contacta con nosotros y te atenderemos encantados.</p>
+              <p className="mt-2 text-sm text-white/70 sm:text-base">Llámanos para preparar tu pedido y recogerlo en tienda.</p>
               <div className="mt-5 space-y-2 text-sm text-white/75">
                 <p>Lunes a viernes: 8:00 – 20:00</p>
                 <p>Sábados: 8:00 – 14:00 · Domingos: cerrado</p>

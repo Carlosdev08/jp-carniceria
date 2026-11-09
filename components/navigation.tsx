@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Phone, ShoppingBag, X } from "lucide-react"
+import { Menu, Phone, X } from "lucide-react"
 import { CartSheet } from "./cart/cart-sheet"
 
 const routes = [
@@ -46,7 +46,7 @@ export function Navigation() {
                 {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[ min(20rem, 88vw)]">
+            <SheetContent side="right" className="w-[min(20rem,88vw)]">
               <div className="mb-8 flex items-center gap-2">
                 <span className="text-2xl font-black tracking-[-0.09em]">J<span className="text-primary/65">&</span>P</span>
                 <span className="text-xs text-muted-foreground">Carnicería & pescadería</span>

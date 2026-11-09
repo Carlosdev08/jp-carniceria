@@ -45,7 +45,7 @@ const offers = [
 
 const benefits = [
   { icon: Award, title: "Calidad premium", description: "Seleccionamos los mejores productos" },
-  { icon: Truck, title: "Entrega a domicilio", description: "Haz tu pedido y recógelo en tienda" },
+  { icon: Truck, title: "Pedidos por teléfono", description: "Haz tu pedido y recógelo en tienda" },
   { icon: Clock3, title: "Siempre fresco", description: "Productos frescos cada día" },
 ]
 
@@ -77,7 +77,7 @@ export default function Home() {
               <Button asChild size="lg" className="h-12 w-full rounded-xl bg-white px-7 text-base font-semibold text-neutral-950 shadow-lg hover:bg-white/90 sm:w-auto">
                 <Link href="#productos">Ver productos <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="h-13 w-full rounded-xl border-white/70 bg-black/20 px-7 text-base font-semibold text-white backdrop-blur-sm hover:bg-white/15 hover:text-white sm:w-auto">
+              <Button asChild size="lg" variant="outline" className="h-12 w-full rounded-xl border-white/70 bg-black/20 px-7 text-base font-semibold text-white backdrop-blur-sm hover:bg-white/15 hover:text-white sm:w-auto">
                 <Link href="tel:+34900000000">Hacer pedido <Phone className="ml-2 h-4 w-4" /></Link>
               </Button>
             </div>
